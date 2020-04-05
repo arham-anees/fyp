@@ -5,13 +5,7 @@
   "projects": {
     "fyp": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "inlineStyle": true,
-          "styleext": "scss",
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -30,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -95,8 +88,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -127,12 +119,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "fyp",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "css"
-    }
-  }
+    }},
+  "defaultProject": "fyp"
 }
