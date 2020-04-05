@@ -1,0 +1,4 @@
+--styling libraries used
+-bootstrap
+-angular material design
+-material design icon

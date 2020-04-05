@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>{{title}}</span>
+    <span [routerLink]="['/']"><a>{{title}}</a></span>
     <span class="example-spacer"></span>
     <mat-icon class="example-icon" aria-hidden="false" aria-label="Example info icon">info</mat-icon>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example person icon">person</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example person icon" [routerLink]="['/login']">person</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
