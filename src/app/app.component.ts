@@ -4,8 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styles: [`
-  ul{
-    style:none
+  .example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
   }
   `]
 })
@@ -14,5 +18,9 @@ export class AppComponent {
 
   logout(){
 
+  }
+
+  flexContainer={
+    
   }
 }
