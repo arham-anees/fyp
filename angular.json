@@ -8,6 +8,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "inlineStyle": true,
+          "styleext": "scss",
           "style": "scss"
         }
       },
@@ -128,5 +129,10 @@
       }
     }
   },
-  "defaultProject": "fyp"
+  "defaultProject": "fyp",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
