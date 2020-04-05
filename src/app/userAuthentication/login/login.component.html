@@ -1,0 +1,27 @@
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+        <div class="input-container">
+            <h2>Welcome back</h2>
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input id="_username" matInput type="text" class="right-align" formControlName="_username">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Enter your password</mat-label>
+                <input id="_password" matInput [type]="hide ? 'password' : 'text'" formControlName="_password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit" class="mb-3">Login
+                <mat-icon aria-hidden="false" aria-label="input icon">input</mat-icon>
+            </button>
+            <br/>
+            <a class="py-4" [routerLink]="['/signup']">
+                New here? Sign up here
+            </a>
+        </div>
+    </form>
+</div>

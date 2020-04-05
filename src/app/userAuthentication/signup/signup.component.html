@@ -1,0 +1,43 @@
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm.value)">
+        <div class="input-container">
+            <h2>Welcome on-Board</h2>
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input id="_name" matInput type="text" class="right-align" formControlName="_name">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input id="_email" matInput type="email" class="right-align" formControlName="_email">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input id="_username" matInput type="text" class="right-align" formControlName="_username">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Enter your password</mat-label>
+                <input id="_password" matInput [type]="hide ? 'password' : 'text'" formControlName="_password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Confirm password</mat-label>
+                <input id="_password" matInput type="password" formControlName="_password">
+                
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit" class="mb-3">Sign up
+                <mat-icon aria-hidden="false" aria-label="input icon">input</mat-icon>
+            </button>
+            <br/>
+            <a class="py-4" [routerLink]="['/login']">
+                Already joined? sign in here
+            </a>
+        </div>
+    </form>
+</div>
