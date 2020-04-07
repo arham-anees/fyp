@@ -2,8 +2,9 @@
   <mat-toolbar-row>
     <span [routerLink]="['/']"><a>{{title}}</a></span>
     <span class="spacer"></span>
-    <mat-icon class="icon px-4" aria-hidden="false" aria-label="Example info icon">info</mat-icon>
-    <mat-icon class="icon px-4" aria-hidden="false" aria-label="Example person icon" [routerLink]="['/login']">person</mat-icon>
+    <mat-icon aria-hidden="false" [routerLink]="['/uploadfiles']">cloud_upload</mat-icon>
+    <mat-icon class="icon px-4" aria-hidden="false" >info</mat-icon>
+    <mat-icon class="icon px-4" aria-hidden="false" [routerLink]="['/login']">person</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>

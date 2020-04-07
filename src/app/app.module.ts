@@ -14,13 +14,23 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './userAuthentication/signup/signup.component';
+import { DashboardComponent } from './user/admin/dashboard/dashboard.component';
+import { UploadFilesComponent } from './user/developer/upload-files/upload-files.component';
+import { ViewChangesComponent } from './user/view-changes/view-changes.component';
+import { DragdropDirective } from './dragdrop.directive';
+import { ProgressComponent } from './progress/progress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent,
+    UploadFilesComponent,
+    ViewChangesComponent,
+    DragdropDirective,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,

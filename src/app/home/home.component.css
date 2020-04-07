@@ -31,3 +31,8 @@
   line-height: 1.5em;
 }
 
+@media only screen and (max-width : 500px){
+    .title h2{
+        text-align: left !important;
+    }
+}
