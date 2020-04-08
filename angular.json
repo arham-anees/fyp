@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "fyp"
+  "defaultProject": "fyp",
+  "cli": {
+    "analytics": false
+  }
 }
